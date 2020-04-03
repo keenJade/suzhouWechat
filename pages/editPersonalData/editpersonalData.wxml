@@ -1,0 +1,83 @@
+<!--pages/editPersonalData/editpersonalData.wxml-->
+<view class="weui-cells photo flex mt0 ">
+      <view  bindtap='bindChooiceProduct1'>
+          <image class="upload_img" src="{{imgurl}}"></image>
+          <input id="uploaderInput1" class="weui-uploader__input" type="file" multiple=""></input>
+      </view>
+     <view class="fs28">点击修改头像</view>
+</view>
+<view class="weui-cells ">
+  <view class="weui-cell border-none">
+    <view class="weui-cell__hd w230">
+      <view class='fs28 '>用户ID</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class='fs28 text-default' readonly placeholder='685236'></input>
+    </view>
+  </view>
+   <view class="weui-cell border-none">
+    <view class="weui-cell__hd w230">
+      <view class='fs28 '>账号</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class='fs28 text-default' readonly placeholder='15963263254'></input>
+    </view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__hd w230">
+      <view class='fs28 '>性别</view>
+    </view>
+    <view class="weui-cell__bd">
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio brand_list" wx:for="{{list}}" wx:key="">
+               <radio value="{{item.name}}" checked="{{item.checked}}"/> 
+               <view class="fs30 color_3">{{item.sex}}</view>
+            </label>
+       </radio-group>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell__ft_in-access">
+    <view class="weui-cell__hd w230">
+      <view class='fs28 '>生日</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker
+        mode="date"
+        value="{{timeDate}}"
+        start="1930-01-01"
+        end="2050-01-01"
+        bindchange="bindDateChange">
+        <view class="picker fs28 text-default">{{timeDate}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell__ft_in-access">
+    <view class="weui-cell__hd w230">
+      <view class='fs28 '>城市</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker
+         mode ="region" 
+        value="{{region}}" custom-item="{{custom-item}}"
+        bindchange="bindRegionChange"> 
+        <view class="picker fs28 text-default">{{region[0]}}-{{region[1]}}-{{region[2]}}</view>
+      </picker>
+    </view>
+  </view>
+</view>
+ <view class="weui-cells mt0 border-after border-before pb50">
+    <view class="weui-cells__title mt0 pt30 pb30">
+      <text class="fs28 fw800 text-default">服务类型</text>
+    </view>
+    <view class="weui-flex pl30 mb60">
+      <view class="weui-cell__item btn1 fs28 fw500 tc mr10 {{type1 == 1? 'active':''}}" bindtap='onType' data-index="1">苹果手机</view>
+      <view class="weui-cell__item btn1 fs28 fw500 tc mr10 {{type1 == 2? 'active':''}}" bindtap='onType' data-index="2">限量款</view>
+      <view class="weui-cell__item btn1 fs28 fw500 tc mr10  {{type1 == 3? 'active':''}}" bindtap='onType' data-index="3">经典包袋</view>
+      <view class="weui-cell__item btn1 fs28 fw500 tc mr10  {{type1 == 4? 'active':''}}" bindtap='onType' data-index="4">羽绒服</view>
+    </view>
+   
+  </view>
+
+<view class='btn_box mt30'>
+  <text class='btn_primary'>保存</text>
+</view>

@@ -1,0 +1,90 @@
+/* pages/buyVIP/buyVIP.wxss *//* pages/buyVIP/buyVIP.wxss */
+
+.buyVIP-top {
+    width: 100vw;
+    height: 360rpx;
+}
+
+.buyVIP-top-img {
+    width: 100%;
+    height: 100%;
+}
+
+.buyVIP-bottom {
+    margin: 0px 20rpx;
+}
+
+.vipclasss {
+    position: relative;
+    top: -60rpx;
+    padding: 44rpx 40rpx 46rpx;
+    background-color: #ffffff;
+}
+
+.vip-title {
+    margin-bottom: 44rpx;
+}
+.weui-cells:before,.weui-cells:after{
+  display:none;
+}
+.weui-cell{
+  margin-bottom: 17rpx;
+}
+.inputbox{
+ border: solid 1px #e6e6e6;
+}
+
+.mg_top{
+  margin-top: 42rpx;
+}
+
+.upload_img {
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.delete_img {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: -10rpx;
+  right: -10rpx;
+}
+
+.upload {
+  position: relative;
+  margin-right: 28rpx;
+}
+.upload text{
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.add_img {
+  width: 180rpx;
+  height: 180rpx;
+  border: 3rpx dashed #eee;
+}
+.weui-uploader{
+  width:100%;
+}
+.weui-uploader__input-box {
+  position: relative;
+  border: none;
+}
+.weui-uploader__input-box input{
+   width: 140rpx;
+	height: 140rpx;
+}
+.upload_img{
+  position: absolute;
+  width: 140rpx;
+	height: 140rpx;
+  z-index:99;
+  border: dashed 3px #eeeeee;
+}
+.weui-uploader__file {
+  position: relative;
+}

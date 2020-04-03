@@ -1,0 +1,56 @@
+<!--pages/myPoint/myPoint.wxml-->
+<view class="page">
+   <view class="weui-cells mt0  ">
+        <view class="weui-cell border-before p0 lbbg" >
+          <view class="weui-cell__bd">
+            <view class="fs48 text-white fw500 ff">159</view>
+            <view class="text-white fs26 o_5">可用积分</view>
+            <view bindtap='openGG' class="tx-btn text-white">
+              积分规则
+            </view>
+          </view>
+        </view>
+  </view>
+  <view wx:if='{{nodata}}' class='emptyData' >
+    <view class="fs30 title">积分收支明细</view>
+    <image src='/images/emptyData.png'></image>
+    <view class="flex">
+        <text class='fs28 text-default'>暂无明细~</text>
+    </view>
+  </view>
+</view>
+
+
+<view class="model  {{guigeModel?'model_show':''}}" wx:if='{{guigeModel}}'>
+  <view class='modelBg' bindtap='closeGG'></view>
+  <view class="modelContent">
+      <view class="top">
+          <view class=" fs36 color_3 fw_b">
+          积分的获取以及使用规则
+          </view>
+          <image src='/images/close_icon.png' bindtap='closeGG'></image>
+      </view>
+     <view>
+          <view class="content">
+            <text class="shuzi">1</text>
+            <text class="text-muted">用户点击心仪商品，邀请好友点赞，即可参与活动，单个商品集赞数排名最多的前20名用户，即可获得免单权利</text>
+          </view>
+          <view class="content">
+            <text class="shuzi">2</text>
+            <text class="text-muted">用户点击心仪商品，邀请好友点赞，即可参与活动，单个商品集赞数排名最多的前20名用户，即可获得免单权利</text>
+          </view>
+          <view class="content">
+            <text class="shuzi">3</text>
+            <text class="text-muted">用户点击心仪商品，邀请好友点赞，即可参与活动，单个商品集赞数排名最多的前20名用户，即可获得免单权利</text>
+          </view>
+          <view class="content">
+            <text class="shuzi">4</text>
+            <text class="text-muted">用户点击心仪商品，邀请好友点赞，即可参与活动，单个商品集赞数排名最多的前20名用户，即可获得免单权利</text>
+          </view>
+     </view>  
+    <view class="buttBox">
+      <text class="fs28 fw_b  color_w" bindtap='know'>我知道了</text>
+    </view>
+  </view>
+</view>
+

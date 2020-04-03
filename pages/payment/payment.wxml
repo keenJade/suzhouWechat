@@ -1,0 +1,99 @@
+<!--pages/payment/payment.wxml-->
+<view class='weui-cells default'>
+  <navigator url='/pages/address/address' class='weui-cell weui-cell__ft_in-access'>
+    <view class='weui-cell__bd'>
+      <view class='fs30 fw_b'>
+        <text>周杰伦</text>
+        <text class='ml10'>15984568411</text>
+      </view>
+      <view class='fs28 text-muted mt30'>广州市海珠区客村新南港西路丽影广场4栋105室</view>
+    </view>
+  </navigator>
+</view>
+<view class='weui-cells'>
+  <view class='title fs32 fw_b'>商品信息</view>
+  <view class='weui-cell goodsinfo'>
+    <view class='weui-cell__hd'>
+      <image src='{{imgBase}}youLike01.png' class='goodsimg'></image>
+    </view>
+    <view class='weui-cell__bd'>
+      <view class='name fs28 text-default'>连帽系腰带鹅绒羽绒服大毛领手工刺绣大 毛领羽绒服纯色酒红色
+      </view>
+      <text class='text-muted fs28 type mt10'>铁锈红-M码</text>
+      <view class='monBox mt10'>
+        <view class='left'>
+          <view>
+            <text class='fs24 fw_b'>￥</text>
+            <text class='fs36 ff'>369</text>
+            <text class='fs24 ff'>.39</text>
+          </view>
+          <text class='fs24 text-muted'>￥999.00</text>
+        </view>
+        <view class='right'>
+          <image src='/images/goodsIcon05.png' bindtap='minus'></image>
+          <input value="{{goodsnumber}}" ></input>
+          <image src='/images/goodsIcon06.png' bindtap='add'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd fs28'>
+      <input placeholder='给商家留言' bindinput='getWord' maxlength='200'></input>
+    </view>
+    <view class='weui-cell__ft fs28 ff wordnum'>
+      {{wordnum}}/200
+    </view>
+  </view>
+</view>
+<view class='weui-cells list'>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd fs28'>
+      商品金额
+    </view>
+    <view class='weui-cell__ft text-default'>
+      <text class='fs28 fw_b'>￥</text>
+      <text class='fs34 ff'>982.00</text>
+    </view>
+  </view>
+  <view class='weui-cell weui-cell__ft_in-access'>
+    <view class='weui-cell__bd fs28'>
+      优惠券
+    </view>
+    <view class='weui-cell__ft text-default ticket'>
+      <text class='tips'>3张可用</text>
+      <text class='fs28'>未使用</text>
+    </view>
+  </view>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd fs28'>
+      会员折扣
+    </view>
+    <view class='weui-cell__ft text-default'>
+      <text class='fs28 fw_b'>-￥</text>
+      <text class='fs34 ff'>982.00</text>
+    </view>
+  </view>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd fs28'>
+      运费
+    </view>
+    <view class='weui-cell__ft text-default'>
+      <text class='fs28 fw_b'>￥</text>
+      <text class='fs34 ff'>982.00</text>
+    </view>
+  </view>
+</view>
+<view class='bottomBtn'>
+  <view class='left'>
+    <text class='fs28 text-muted'>实付款</text>
+    <view>
+      <text class='fs30 fw_b'>￥</text>
+      <text class='fs52 ff'>369</text>
+      <text class='fs30 ff'>.39</text>
+    </view>
+  </view>
+  <view class='right fs28 fw_b .text-white'>
+  立即支付
+  </view> 
+</view>

@@ -1,0 +1,82 @@
+<view class="page">
+  <view class="weui-cells border-after top">
+    <view class="weui-cell">
+      <view class="weui-cell__bd flex">
+          <picker bindchange="bindPickerChange1" id="1"  mode="date" value="{{date}}"  start="2000-01-01" end="2050-01-01" bindchange="bindDateChange1">
+             <view class="fs34 fw500 ff">{{dateTime1}}</view>
+        </picker>
+        <view class="fs26 text-muted">至</view>
+        <picker bindchange="bindPickerChange2"  id="2"  mode="date" value="{{date}}" start="2000-01-01" end="2050-01-01" bindchange="bindDateChange2">
+             <view class="fs34 fw500 ff">{{dateTime2}}</view>
+        </picker>
+      </view>
+      <view class="weui-cell__ft allbtn {{ open?'open':''}}">
+           <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class='fs28 fw600 text-default'>{{array[index]}}</view>
+            </picker>
+           <i class="arrow-down"></i>
+      </view>
+    </view>
+  </view>
+  
+  <view class="weui-cells mt0 border-after" wx:if='{{!emptyData}}'>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="fs28">充值</view>
+        <view class="fs24 text-muted mt10">今天 12:30</view>
+      </view>
+      <view>
+        <b class="fs34 ff">-1800</b>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="fs28">提现</view>
+        <view class="fs24 text-muted mt10">昨天 12:30</view>
+      </view>
+      <view>
+        <b class="fs34 ff">-2080</b>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="fs28">退款</view>
+        <view class="fs24 text-muted mt10">2018.12.28 12:30</view>
+      </view>
+      <view class="text-red">
+        <b class="fs34 ff">+2080</b>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="fs28">消费</view>
+        <view class="fs24 text-muted mt10">2018.12.28 12:30</view>
+      </view>
+      <view>
+        <b class="fs34 ff">-1000</b>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="fs28">加款</view>
+        <view class="fs24 text-muted mt10">今天 12:30</view>
+      </view>
+      <view>
+        <b class="fs34 ff">-180</b>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="fs28">结算</view>
+        <view class="fs24 text-muted mt10">2018.12.28 12:30</view>
+      </view>
+      <view class="text-red">
+        <b class="fs34 ff">+2080</b>
+      </view>
+    </view>
+  </view>
+  <view class='emptyDataBox' wx:if='{{emptyData}}'>
+    <image src='/images/emptyData.png'></image>
+    <text>~暂无相关数据</text>
+  </view>
+</view>

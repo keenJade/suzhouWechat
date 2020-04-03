@@ -1,0 +1,16 @@
+/* pages/messageCenter/messageCenter.wxss */
+
+.weui-cell{
+  height: 198rpx;
+  box-sizing: border-box;
+
+
+}
+
+.menu_cells image {
+  width: 56rpx;
+  height: 56rpx;
+  margin-right: 20rpx;
+}
+
+

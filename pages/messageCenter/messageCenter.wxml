@@ -1,0 +1,47 @@
+<!--pages/messageCenter/messageCenter.wxml-->
+<view>
+    <view class='weui-cells menu_cells'>
+    <navigator url='/pages/mygroupBuy/mygroupBuy' class='weui-cell '>
+      <view class='weui-cell__hd'>
+        <image src='/images/icon01.png' />
+      </view>
+      <view class='weui-cell__bd'>
+          <view class="fs28">精选活动</view>  
+          <view class="text-muted fs24 mt20">暂无最新活动消息</view>  
+      </view>
+      <view class='weui-cell__ft'></view>
+    </navigator>
+    <navigator url='/pages/myfans/myfans' class='weui-cell '>
+      <view class='weui-cell__hd'>
+        <image src='/images/icon02.png' />
+      </view>
+      <view class='weui-cell__bd'>
+           <view class="fs28">服务消息</view>  
+          <view class="text-muted fs24 mt20">暂无最新活动消息</view>  
+      </view>
+      <view class='weui-cell__ft'></view>
+    </navigator>
+    <navigator url='/pages/mycoupons/mycoupons' class='weui-cell '>
+      <view class='weui-cell__hd'>
+        <image src='/images/icon03.png' />
+      </view>
+      <view class='weui-cell__bd'>
+           <view class="fs28">系统通知</view>  
+          <view class="text-muted fs24 mt20">暂无最新活动消息</view>  
+      </view>
+      <view class='weui-cell__ft'>
+      </view>
+    </navigator>
+      <navigator url='/pages/mycoupons/mycoupons' class='weui-cell '>
+      <view class='weui-cell__hd'>
+        <image src='/images/icon04.png' />
+      </view>
+      <view class='weui-cell__bd'>
+           <view class="fs28">售后消息</view>  
+          <view class="text-muted fs24 mt20">暂无最新活动消息</view>  
+      </view>
+      <view class='weui-cell__ft'>
+      </view>
+    </navigator>
+  </view>
+</view>

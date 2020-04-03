@@ -1,0 +1,41 @@
+<view class='page'>
+
+
+  <view class="outbox">
+    <view class='bigqrcode'>
+      <view class='block one'>
+        <image class='goodsImg' src='{{imgBase}}goods01.png'></image>
+        <view class="up_box">
+          <view class='info1 mt10 '>
+            <view class="fs32  fw_b ellipsisLn2">冬季新款羽绒服宽松面包服休闲百搭短款羽绒服女...</view>
+            <view class='price'>
+              <text class='fs30 fw_b'>￥</text>
+              <text class='fs50 ff'>189.</text>
+              <text class='fs30 ff'>00</text>
+            </view>
+          </view>
+          <view class='codeImg'>
+            <image src='/images/code.png'></image>
+            <text class="fs22 text-muted">长按二维码关注公众号</text>
+          </view>
+        </view>
+      </view>
+      <view class='block one'>
+        <view class='userInfo'>
+          <image src='/images/df_tx.png'></image>
+          <view>
+            <view class='fs34 fw_b'>汤姆克鲁斯</view>
+            <view class="fs24 text-muted">我推荐了新商品，快查看呀</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='bottom_box'>
+    <view>
+      <image src='/images/yu_icon_00.png' />保存图片</view>
+    <view>
+      <image src='/images/yu_icon_01.png' />分享好友</view>
+  </view>
+
+</view>

@@ -1,0 +1,12 @@
+/* pages/personalData/personalData.wxss */
+
+.photo image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 16rpx;
+}
+
+.weui-cell__ft_in-access:after{
+  border-color: #333333;
+}

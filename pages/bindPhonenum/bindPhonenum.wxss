@@ -1,0 +1,5 @@
+/* pages/bindPhonenum/bindPhonenum.wxss */
+.text-muted{
+  margin-top: 36rpx;
+  text-align: center;
+}

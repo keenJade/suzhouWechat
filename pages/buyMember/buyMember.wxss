@@ -1,0 +1,112 @@
+/* pages/buyMember/buyMember.wxss */
+
+.buyMember{
+  
+  background-color:#fff;
+}
+.top_img{
+  width: 710rpx;
+	height: 310rpx;
+  margin:14rpx 20rpx;
+	background-color: #363235;
+	box-shadow: 0rpx 20rpx 40rpx 0rpx 
+		rgba(52, 48, 49, 0.4);
+	border-radius: 10rpx;
+}
+
+.interests{
+  padding:20rpx 38rpx 120rpx;
+}
+.interests_ti{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.interests_ti image{
+  width: 36rpx;
+	height: 36rpx;
+}
+.con{
+  margin-top:30rpx;
+}
+.con view{
+  font-size: 24rpx;
+  color: #333333;
+  line-height: 44rpx;
+}
+.bottom_btns {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 120rpx;
+  background-color: #fff;
+  z-index: 9;
+  display: flex;
+  box-shadow: 0px -10rpx 20rpx 0rpx rgba(0, 0, 0, 0.03);
+}
+.bottom_btns .left {
+  display: flex;
+  align-items: center;
+  flex:1;
+}
+
+.bottom_btns .left>view,.bottom_btns .left>navigator {
+  text-align: center;
+  flex: 1;
+  font-size: 28rpx;
+}
+
+.bottom_btns .left .icon {
+  position: relative;
+  width: 48rpx;
+  height: 48rpx;
+  margin: 0 auto;
+}
+
+.bottom_btns .left .text {
+  font-size: 22rpx;
+  color: #666;
+}
+
+.bottom_btns .left .icon image {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom_btns .left .icon .num {
+  position: absolute;
+  color: #fff;
+  font-size: 18rpx;
+  min-width: 32rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  background-color: #c6c3f0;
+  border-radius: 30rpx;
+  right: -10rpx;
+  top: -4rpx;
+}
+
+.bottom_btns .right {
+  display: flex;
+  align-items: center;
+  padding-right: 20rpx;
+  padding-left: 20rpx;
+}
+
+.bottom_btns .right .btns {
+  display: flex;
+}
+
+.bottom_btns .right .btns .btn2 {
+  background-color: #c6c3f0;
+}
+
+.bottom_btns .right .btns>.view2 {
+  width: 510rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 28rpx;
+}

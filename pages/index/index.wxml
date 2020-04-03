@@ -1,0 +1,219 @@
+<view class='page'>
+ 
+  <view class='pagetop'>
+   <view class='search_bar'>
+    <view class='input_box flex'>
+     <image src='/images/selech01.png'></image>
+     <input placeholder='圣诞礼物1500减150' readonly class='input'></input>
+    </view>
+  </view>
+    <view class='swiper-box'>
+      <swiper bindchange="swiperChange" autoplay="true"  interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="sw">
+          <swiper-item>
+            <image wx:if="{{item}}" src="{{imgBase}}{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+       <view class="imageCount"><text class="fs24">{{imgUrls.length}}</text>/<text class="fs22">{{current+1}}</text></view>
+       <view class='groupbuy '>
+        <view class='swiper2'>
+          <swiper interval="{{interval}}" duration="{{duration}}" vertical="true" autoplay="true" >
+            <block wx:for="{{p3}}" wx:key="sw3">
+              <swiper-item>
+                <view class='sw_item ellipsisLn' >
+                    <view>{{item}}</view>
+                </view>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+      </view>
+    </view>
+   
+  </view>
+   <view class='card-flex grid4 index_card_01'>
+      <view class='flex_item'>
+        <view class='icon'>
+          <image src="/images/index01.png" />
+        </view>
+        <view class='text'>每日新鲜事</view>
+      </view>
+      <navigator url='/pages/seckill/seckill' class='flex_item'>
+        <view class='icon'>
+          <image src="/images/index02.png" />
+        </view>
+        <view class='text'>大咖说</view>
+      </navigator>
+      <view class='flex_item'>
+        <view class='icon'>
+          <image src="/images/index03.png" />
+        </view>
+        <view class='text'>芝麻书苑</view>
+      </view>
+      <navigator url='/pages/goodsList/goodsList' class='flex_item'>
+        <view class='icon'>
+          <image src="/images/index04.png" />
+        </view>
+        <view class='text'>芝麻相册</view>
+      </navigator>
+    </view>
+     <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" id='0' bindtap="clickTab">
+      <text class='fs24'>26日</text>
+      <text class='fs22'>往期精选</text>
+    </view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" id='1' bindtap="clickTab">
+      <text class='fs24'>10:00</text>
+       <text class='fs22'>预热中</text>
+    </view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" id='2' bindtap="clickTab">
+      <text class='fs24'>12:00</text>
+       <text class='fs22'>预热中</text>
+    </view>
+    <view class="swiper-tab-item {{currentTab==3?'active':''}}" id='3' bindtap="clickTab">
+      <text class='fs24'>14:00</text>
+      <text class='fs22'>预热中</text>
+    </view>
+  </view>
+ <view class='weui-cells groupbuy1'>
+ <view class='weui-cell'>
+      <view class='weui-cell__bd'>
+        <view class='imgbox'>
+          <image src='{{imgBase}}group01.png'></image><!--690x338-->
+          <text>已有156人参与</text>
+        </view>
+        <view class='fs28 fw600'><text class='text-red'> </text>连帽系腰带鹅绒羽绒服大毛领手工刺绣大毛领羽绒服纯色酒红色</view>
+        <view class='weui-flex flex-center mt10'>
+          <view class='weui-flex__item'>
+             <text class='fs24 color_z'>团购价</text><text  class='fs24 color_z'>￥</text> <text class='fs42 color_z'>88</text><text class='fs24 color_z'>.00</text> <text class='fs24 ml10'>|单买价</text> <text class='fs24'>￥</text> <text class='fs42'>399</text> <text class='fs24'>.00</text>
+          </view>
+          <view> <view class='gobtn'>已抢光</view></view>
+        </view>
+      </view>
+    </view>
+    <view class='weui-cell'>
+      <view class='weui-cell__bd'>
+        <view class='imgbox'>
+          <image src='{{imgBase}}group01.png'></image><!--690x338-->
+          <text>已有156人参与</text>
+        </view>
+        <view class='fs28 fw600'><text class='text-red'> </text>连帽系腰带鹅绒羽绒服大毛领手工刺绣大毛领羽绒服纯色酒红色</view>
+        <view class='weui-flex flex-center mt10'>
+          <view class='weui-flex__item'>
+             <text class='fs24 color_z'>团购价</text><text  class='fs24 color_z'>￥</text> <text class='fs42 color_z'>88</text><text class='fs24 color_z'>.00</text> <text class='fs24 ml10'>|单买价</text> <text class='fs24'>￥</text> <text class='fs42'>399</text> <text class='fs24'>.00</text>
+          </view>
+          <view> <view class='gobtn'>马上抢</view></view>
+        </view>
+      </view>
+    </view>
+  </view>
+ 
+  <view class='goods_like'>
+    <view class='weui-flex flex-center'>
+      <view  class='weui-flex__item fs36 fw600'>好物推荐</view>
+    </view>
+    <view class='card-flex grid2'>
+      <view class='flex_item'>
+        <view class='mspor_item'>
+          <view class='imgbox'>
+            <image src="{{imgBase}}/youLike01.png" class="slide2-image" />
+          </view>
+          <view class='textbox'>
+            <view class='title ellipsisLn2'>补水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装</view>
+            <view class="tianjia">
+                <view class="flex_a">
+                    <view class='price'>
+                      <text class='fs22 fw_b'>￥</text>
+                      <text class='fs36 ff'>189.</text>
+                      <text class='fs22 ff'>00</text>
+                    </view>
+                    <view class="fs24 color_9 gprice">￥999.00</view>
+                 </view> 
+               <navigator  url="/pages/cart/cart" open-type="switchTab"> <image src="/images/add01.png"  /></navigator>
+            </view>
+             <view class="fs22 boxs-show">
+               <view>已省￥30</view>
+               <view>分享赚￥80</view>
+            </view>
+          </view>
+        </view>
+      </view>
+     <view class='flex_item'>
+        <view class='mspor_item'>
+          <view class='imgbox'>
+            <image src="{{imgBase}}/youLike01.png" class="slide2-image" />
+          </view>
+          <view class='textbox'>
+            <view class='title ellipsisLn2'>补水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装</view>
+            <view class="tianjia">
+                <view class="flex_a">
+                    <view class='price'>
+                      <text class='fs22 fw_b'>￥</text>
+                      <text class='fs36 ff'>189.</text>
+                      <text class='fs22 ff'>00</text>
+                    </view>
+                    <view class="fs24 color_9 gprice">￥999.00</view>
+                 </view> 
+                <navigator  url="/pages/cart/cart" open-type="switchTab"> <image src="/images/add01.png"  /></navigator>
+            </view>
+             <view class="fs22 boxs-show">
+               <view>已省￥30</view>
+               <view>分享赚￥80</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='flex_item'>
+        <view class='mspor_item'>
+          <view class='imgbox'>
+            <image src="{{imgBase}}/youLike01.png" class="slide2-image" />
+          </view>
+          <view class='textbox'>
+            <view class='title ellipsisLn2'>补水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装</view>
+            <view class="tianjia">
+                <view class="flex_a">
+                    <view class='price'>
+                      <text class='fs22 fw_b'>￥</text>
+                      <text class='fs36 ff'>189.</text>
+                      <text class='fs22 ff'>00</text>
+                    </view>
+                    <view class="fs24 color_9 gprice">￥999.00</view>
+                 </view> 
+                <navigator  url="/pages/cart/cart" open-type="switchTab"> <image src="/images/add01.png"  /></navigator>
+            </view>
+            <view class="fs22 boxs-show">
+               <view>已省￥30</view>
+               <view>分享赚￥80</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='flex_item'>
+        <view class='mspor_item'>
+          <view class='imgbox'>
+            <image src="{{imgBase}}/youLike01.png" class="slide2-image" />
+          </view>
+          <view class='textbox'>
+            <view class='title ellipsisLn2'>补水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装</view>
+            <view class="tianjia">
+                <view class="flex_a">
+                    <view class='price'>
+                      <text class='fs22 fw_b'>￥</text>
+                      <text class='fs36 ff'>189.</text>
+                      <text class='fs22 ff'>00</text>
+                    </view>
+                    <view class="fs24 color_9 gprice">￥999.00</view>
+                 </view> 
+               <navigator  url="/pages/cart/cart" open-type="switchTab"> <image src="/images/add01.png"  /></navigator>
+            </view>
+             <view class="fs22 boxs-show">
+               <view>已省￥30</view>
+               <view>分享赚￥80</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

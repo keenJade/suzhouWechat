@@ -1,0 +1,28 @@
+<!--pages/bindPhonenum/bindPhonenum.wxml-->
+
+ <view class="weui-cells weui-cells_form mt0">
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <label class="weui-label fw600">手机号</label>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" type="number" placeholder="请输入注册手机号" />
+    </view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <label class="weui-label fw600">验证码</label>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" type="number" placeholder="请输入验证码" />
+    </view>
+    <view class="weui-cell__ft">
+      <text class='fs28 text-main fw600'>{{timeText}}</text>
+    </view>
+  </view>
+</view>
+
+<view class='btn_box mt100'>
+  <navigator class='btn_primary'>确定</navigator>
+  <view class="fs26 text-muted">注:手机号码修改成功后需要使用新的手机号码进行登录</view>
+</view>

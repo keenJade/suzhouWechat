@@ -1,0 +1,51 @@
+<!--pages/buyVIP/buyVIP.wxml-->
+<view class="" hover-class="none" hover-stop-propagation="false">
+
+  <view class="buyVIP-top">
+    <image class="buyVIP-top-img" src="../../images/buyBGC.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+  </view>
+  <view class="buyVIP-bottom">
+    <view class="vipclasss ">
+      <view class="vip-title">
+        <text class="fs32 fw_b">申请成为银团长</text>
+      </view>
+      <view class="weui-cells weui-cells_form mt0">
+        <view class="weui-cell inputbox">
+
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="number" placeholder="微信号" />
+          </view>
+        </view>
+        <view class="weui-cell inputbox">
+
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="number" placeholder="手机号" />
+          </view>
+        </view>
+        <view class="weui-cell inputbox">
+
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="number" placeholder="上级团长ID" />
+          </view>
+        </view>
+      </view>
+      <view class="vip-title">
+        <text class="fs28">上传微信群截图</text>
+        <view class="weui-cell border-none">
+          <view class=" upload" bindtap='bindChooiceProduct1'>
+            <image class="add_img" src="{{src1}}"></image>
+            <input id="uploaderInput1" class="weui-uploader__input" type="file" multiple=""></input>
+          </view>
+          <view class=" upload" bindtap='bindChooiceProduct2'>
+            <image class="add_img" src="{{src2}}"></image>
+            <input id="uploaderInput2" class="weui-uploader__input" type="file" multiple=""></input>
+          </view>
+        </view>
+      </view>
+      <view class='mg_top'>
+        <navigator url="/pages/applyVIP/applyVIP" class='btn_primary fs32' bindtap="gotoApply">购买权限</navigator>
+      </view>
+    </view>
+
+  </view>
+</view>

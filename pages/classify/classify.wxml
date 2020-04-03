@@ -1,0 +1,122 @@
+<view class='page'>
+  <navigator  url="/pages/search/search" class='search_bar'>
+    <view class='input_box'>
+     <image src='/images/selech01.png'></image>
+     <view  class='input text-muted'  bindfocus='goSearch'>请输入您要搜索的内容</view>
+    </view>
+  </navigator>
+<scroll-view class='time_scroll' scroll-x>
+    <view class='tab_hd'>
+      <block wx:key="item" wx:for="{{times}}">
+        <view bindtap='changeTime' data-id='{{item.id}}' data-type='{{item.type}}' class='{{item.curr? "curr":""}}'>
+          <view class='text-muted'>{{item.text}}</view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+
+  <view class='goods_like'>
+    <view class='card-flex grid2'>
+      <view class='flex_item'>
+        <view class='mspor_item'>
+          <view class='imgbox'>
+            <image src="{{imgBase}}/youLike01.png" class="slide2-image" />
+          </view>
+          <view class='textbox'>
+            <view class='title ellipsisLn2'>补水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装</view>
+            <view class="tianjia">
+                <view class="flex_a">
+                    <view class='price'>
+                      <text class='fs22 fw_b'>￥</text>
+                      <text class='fs36 ff'>189.</text>
+                      <text class='fs22 ff'>00</text>
+                    </view>
+                    <view class="fs24 color_9 gprice">￥999.00</view>
+                 </view> 
+               <navigator  url="/pages/cart/cart" open-type="switchTab"> <image src="/images/add01.png"  /></navigator>
+            </view>
+            <view class="fs22 boxs-show">
+               <view>已省￥30</view>
+               <view>分享赚￥80</view>
+            </view>
+          </view>
+        </view>
+      </view>
+     <view class='flex_item'>
+        <view class='mspor_item'>
+          <view class='imgbox'>
+            <image src="{{imgBase}}/youLike01.png" class="slide2-image" />
+          </view>
+          <view class='textbox'>
+            <view class='title ellipsisLn2'>补水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装</view>
+            <view class="tianjia">
+                <view class="flex_a">
+                    <view class='price'>
+                      <text class='fs22 fw_b'>￥</text>
+                      <text class='fs36 ff'>189.</text>
+                      <text class='fs22 ff'>00</text>
+                    </view>
+                    <view class="fs24 color_9 gprice">￥999.00</view>
+                 </view> 
+                <navigator  url="/pages/cart/cart" open-type="switchTab"> <image src="/images/add01.png"  /></navigator>
+            </view>
+            <view class="fs22 boxs-show">
+               <view>已省￥30</view>
+               <view>分享赚￥80</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='flex_item'>
+        <view class='mspor_item'>
+          <view class='imgbox'>
+            <image src="{{imgBase}}/youLike01.png" class="slide2-image" />
+          </view>
+          <view class='textbox'>
+            <view class='title ellipsisLn2'>补水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装</view>
+            <view class="tianjia">
+                <view class="flex_a">
+                    <view class='price'>
+                      <text class='fs22 fw_b'>￥</text>
+                      <text class='fs36 ff'>189.</text>
+                      <text class='fs22 ff'>00</text>
+                    </view>
+                    <view class="fs24 color_9 gprice">￥999.00</view>
+                 </view> 
+                <navigator  url="/pages/cart/cart" open-type="switchTab"> <image src="/images/add01.png"  /></navigator>
+            </view>
+            <view class="fs22 boxs-show">
+               <view>已省￥30</view>
+               <view>分享赚￥80</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='flex_item'>
+        <view class='mspor_item'>
+          <view class='imgbox'>
+            <image src="{{imgBase}}/youLike01.png" class="slide2-image" />
+          </view>
+          <view class='textbox'>
+            <view class='title ellipsisLn2'>补水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装水保湿套装</view>
+            <view class="tianjia">
+                <view class="flex_a">
+                    <view class='price'>
+                      <text class='fs22 fw_b'>￥</text>
+                      <text class='fs36 ff'>189.</text>
+                      <text class='fs22 ff'>00</text>
+                    </view>
+                    <view class="fs24 color_9 gprice">￥999.00</view>
+                 </view> 
+               <navigator  url="/pages/cart/cart" open-type="switchTab"> <image src="/images/add01.png"  /></navigator>
+            </view>
+            <view class="fs22 boxs-show">
+               <view>已省￥30</view>
+               <view>分享赚￥80</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

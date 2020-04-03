@@ -1,0 +1,137 @@
+/* pages/myPoint/myPoint.wxss */
+  .lbbg {
+      background-color: #c6c3f0;
+      height: 242rpx;
+      box-sizing: border-box;
+      padding-top: 50rpx;
+      padding-bottom: 50rpx;
+}
+  .lbbg .weui-cell__bd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+.o_5{
+  opacity: .5;
+}
+.tx-btn {
+  width: 120rpx;
+  height: 46rpx;
+  border: solid 1px rgba(255,255,255,.5);
+  font-size: 24rpx;
+  color: #fff;
+  line-height: 46rpx;
+  text-align: center;
+  margin-top:14rpx;
+}
+
+
+.fs48 {
+  font-size: 48rpx;
+}
+.emptyData{
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+.emptyData image{
+  width: 100vw;
+  height: 380rpx;
+}
+.emptyData text{
+  text-align: center;
+  display: block;
+}
+.emptyData .title{
+  padding:40rpx 32rpx;
+}
+
+
+/* 弹窗部分 */
+
+.model {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  transition: all 0.3s;
+  transform: translateY(100%);
+}
+
+.model_show{
+  transform: translateY(0);
+}
+.modelBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 889;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.model .modelContent {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background-color: #fff;
+  height: 70vh;
+  z-index: 999;
+  padding:48rpx 30rpx;
+  box-sizing: border-box;
+}
+.model .content{
+  display: flex;
+  align-items: flex-start;
+  padding-top:70rpx;
+}
+.model .content .shuzi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50rpx;
+	height: 32rpx;
+  border-radius: 50%;
+  font-size: 22rpx;
+  color: #ffffff;
+  margin-right: 10rpx;
+	background-color: #c0c0c0;
+	border: solid 1rpx #eeeeee;
+}
+.model .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.model .top image {
+  width: 26rpx;
+  height: 26rpx;
+}
+
+.model .buttBox {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 120rpx;
+  width: 100%;
+  padding: 16rpx 30rpx 24rpx;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.model .buttBox text {
+  flex: 1;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  background-color: #c6c3f0;
+}
+
+

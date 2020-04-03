@@ -1,0 +1,33 @@
+<!--pages/personalData/personalData.wxml-->
+<view class="weui-cells mt0">
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+     <view class='photo'>
+        <image src="/images/goods01.png" />
+      </view>
+     
+    </view>
+    <view class="weui-cell__bd">
+      <view class='fs34 fw600'>个人主页</view>
+    </view>
+  </view>
+ <navigator url='/pages/editPersonalData/editpersonalData' class="weui-cell weui-cell__ft_in-access">
+    <view class="weui-cell__bd">
+      <view class='fs28 fw_b'>个人信息</view>
+    </view>
+    <view class="weui-cell__ft"></view>
+  </navigator>
+   <navigator url='/pages/changePassword/changePassword' class="weui-cell weui-cell__ft_in-access">
+    <view class="weui-cell__bd">
+      <view class='fs28 fw_b'>登录密码</view>
+    </view>
+    <view class="weui-cell__ft"></view>
+  </navigator>
+   <navigator url='/pages/bindPhonenum/bindPhonenum' class="weui-cell weui-cell__ft_in-access">
+    <view class="weui-cell__bd">
+      <view class='fs28 fw_b'>绑定手机号</view>
+    </view>
+    <view class="weui-cell__ft"></view>
+  </navigator>
+</view>
+

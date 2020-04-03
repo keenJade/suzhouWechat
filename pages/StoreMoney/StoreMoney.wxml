@@ -1,0 +1,98 @@
+<!--pages/StoreMoney/StoreMoney.wxml-->
+
+<view class="page">
+  <view class="weui-cells border-after top">
+    <view class="weui-cell">
+      <view class="weui-cell__bd flex">
+          <picker bindchange="bindPickerChange1" id="1"  mode="date" value="{{date}}"  start="2000-01-01" end="2050-01-01" bindchange="bindDateChange1">
+             <view class="fs34 fw500 ff">{{dateTime1}}</view>
+        </picker>
+        <view class="fs26 text-muted">至</view>
+        <picker bindchange="bindPickerChange2"  id="2"  mode="date" value="{{date}}" start="2000-01-01" end="2050-01-01" bindchange="bindDateChange2">
+             <view class="fs34 fw500 ff">{{dateTime2}}</view>
+        </picker>
+      </view>
+    
+    </view>
+  </view>
+   <view class="moneyInfo11">
+        <navigation>
+            <text class="fs26 color_w">店铺</text>
+            <text class="fs40 color_w num">（33）</text>
+        </navigation>
+        <navigation>
+            <text class="fs26 color_w">会员</text>
+            <text class="fs40 color_w num">（33）</text>
+        </navigation>
+    </view>
+  <view class="weui-cells mt0 border-after" wx:if='{{!emptyData}}'>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="fs28">XX店铺 </view>
+         <text class=" text-muted fs28">订单编号:256385423663</text>
+        <view class="fs24 text-muted mt10">今天 12:30</view>
+      </view>
+      <view>
+        <b class="fs34 ff">-1800</b>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="fs28">XX会员</view>
+        <text class=" text-muted fs28">订单编号:256385423663</text>
+        <view class="fs24 text-muted mt10">昨天 12:30</view>
+      </view>
+      <view>
+        <b class="fs34 ff">-2080</b>
+      </view>
+    </view>
+    <view class="weui-cell">
+       <view class="weui-cell__bd">
+        <view class="fs28">XX会员</view>
+        <text class=" text-muted fs28">订单编号:256385423663</text>
+        <view class="fs24 text-muted mt10">昨天 12:30</view>
+      </view>
+      <view class="text-red">
+        <b class="fs34 ff">+2080</b>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="fs28">XX会员</view>
+        <text class=" text-muted fs28">订单编号:256385423663</text>
+        <view class="fs24 text-muted mt10">昨天 12:30</view>
+      </view>
+      <view>
+        <b class="fs34 ff">-1000</b>
+      </view>
+    </view>
+    <view class="weui-cell">
+       <view class="weui-cell__bd">
+        <view class="fs28">XX店铺 </view>
+         <text class=" text-muted fs28">订单编号:256385423663</text>
+        <view class="fs24 text-muted mt10">今天 12:30</view>
+      </view>
+      <view>
+        <b class="fs34 ff">-180</b>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="fs28">XX店铺 </view>
+         <text class=" text-muted fs28">订单编号:256385423663</text>
+        <view class="fs24 text-muted mt10">今天 12:30</view>
+      </view>
+      <view class="text-red">
+        <b class="fs34 ff">+2080</b>
+      </view>
+    </view>
+  </view>
+  <view class='emptyDataBox' wx:if='{{emptyData}}'>
+    <image src='/images/emptyData.png'></image>
+    <text>~暂无相关数据</text>
+  </view>
+</view>
+
+           
+
+        

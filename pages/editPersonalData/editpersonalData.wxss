@@ -1,0 +1,71 @@
+/* pages/editPersonalData/editpersonalData.wxss */
+.photo{
+  flex-direction: column;
+  padding:66rpx 0 72rpx;
+}
+.photo image {
+  width: 120rpx;
+	height: 120rpx;
+  margin-bottom:30rpx;
+  border-radius: 50%;
+}
+.w230{
+  width:230rpx;
+}
+.radio-group{
+  display: flex;
+  align-items: center;
+}
+.radio-group .brand_list{
+  display: flex;
+  align-items: center;
+  margin-right: 40rpx;
+}
+
+.weui-cell__ft picker{
+  width: 300rpx;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10rpx;
+  margin-right: -10rpx;
+  margin-top: 20rpx;
+}
+
+.tags .tag {
+  width: 33.33%;
+}
+.tags .tag.top1{
+  width: 50%;
+
+}
+.boxs{
+  display: flex;
+ flex-wrap: wrap;
+
+}
+.tags .boxs view {
+  display: block;
+  height: 70rpx;
+  background: rgba(244, 244, 244, 1);
+  line-height: 70rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #333;
+  margin: 10rpx;
+}
+
+.btn1{
+  width:160rpx;
+height:70rpx;
+line-height: 70rpx;
+ background: rgba(244, 244, 244, 1);
+border:1px solid rgba(229,229,229,1);
+}
+.btn1.active {
+  color: #77738A ;
+  background-color: #ffffff;
+	border: solid 1rpx #77738A;
+}

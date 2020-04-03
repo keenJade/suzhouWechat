@@ -1,0 +1,41 @@
+/* pages/cashDetail/cashDetail.wxss */
+.flex{
+  justify-content: flex-start;
+}
+.flex .text-muted{
+  padding:0 10px;
+}
+
+
+.cell-flex {
+  text-align: center;
+}
+
+
+.money{
+  font-weight: bold;
+}
+
+.weui-cell::after,.weui-cells::before,.weui-cell::before{
+  display: none
+}
+
+.fs34{
+  font-size: 34rpx;
+}
+.top{
+  margin-top: 0rpx;
+  height:9%;
+}
+.emptyDataBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:20rpx;
+  background: #fff;
+  height:89%;
+}
+.emptyDataBox image{
+  width: 100vw;
+  height: 380rpx;
+}

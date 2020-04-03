@@ -1,0 +1,57 @@
+<!--pages/buyMember/buyMember.wxml-->
+<view class="buyMember">
+      <image class="top_img" src='/images/vip_img.png'></image>
+      <view class="interests">
+          <view class="interests_ti">
+              <view class="fs34 color_3 fw_b">会员权益</view>
+             <navigator> <image src='/images/yu_share.png'></image></navigator>
+          </view>
+          <view class=" con">
+            <view>1.报考人员注册</view>
+            <view> 2.登录后上传照片</view>
+            <view> 3.选择考试、报名地</view>
+            <view>4.阅读《专业技术人员资格考试报名证明事项告知承诺制告知书》《报考须知》</view>
+            <view>5.录入、检查并保存报名信息</view>
+            <view>6.签署《专业技术人员资格考试报名证明事项告知承诺制报考承诺书》</view>
+            <view>7.确认报名信息</view>
+            <view> 8.特别情况审核</view>
+            <view>9.缴纳考试费用</view>
+          </view>
+      </view>
+</view>
+<view class='bottom_btns'>
+  <view class='left'>
+    <view bindtap='goindex'>
+      <view class='icon'>
+        <image src='/images/tabbar_icon01.png'></image>
+      </view>
+      <view class='text'>首页</view>
+    </view>
+    <view>
+      <view class='icon'>
+        <image src='/images/goodsIcon02.png'></image>
+      </view>
+      <view class='text'>客服</view>
+    </view>
+   
+  </view>
+  <view  wx:if="{{toptis}}" class='right'>
+    <view class='btns '>
+      <view class='btn2 view1 flex' bindtap='pay'>
+          <view class="fs28 fw600">拼团买</view>
+          <view>
+            <text class="fs24">￥</text>
+            <text class="fs42">369</text>
+            <text class="fs24">.00</text>
+          </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else class='right'>
+    <view class='btns '>
+      <view class='btn2 view2' bindtap='pay'>
+          <view class="fw_b">成为会员(￥100.00)</view>
+      </view>
+    </view>
+  </view>
+</view>

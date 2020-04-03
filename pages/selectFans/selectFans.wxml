@@ -1,0 +1,167 @@
+<!--pages/selectFans/selectFans.wxml-->
+<view class="page">
+  <view class="h-search weui-cell bg-fff border-after">
+    <view class="h-search_input weui-cell__bd">
+      <image src="/images/selech01.png" bindtap='selectFans'></image>
+      <input class='fs30' placeholder='请输入姓名电话' value='' confirm-type="search"></input>
+    </view>
+    <view class="fs30 weui-cell__ft text-default">确定</view>
+  </view>
+<view class="weui-cells  mt5">
+    <view class="weui-cell">
+      <view class="weui-cell__bd flex">
+          <picker bindchange="bindPickerChange1" id="1"  mode="date" value="{{date}}"  start="2000-01-01" end="2050-01-01" bindchange="bindDateChange1">
+             <view class="fs34 fw500 ff">{{dateTime1}}</view>
+        </picker>
+        <view class="fs26 text-muted">至</view>
+        <picker bindchange="bindPickerChange2"  id="2"  mode="date" value="{{date}}" start="2000-01-01" end="2050-01-01" bindchange="bindDateChange2">
+             <view class="fs34 fw500 ff">{{dateTime2}}</view>
+        </picker>
+      </view>
+      <view class="weui-cell__ft allbtn {{ open?'open':''}}" >
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class='fs28 fw600 text-default'>{{array[index]}}</view>
+            </picker>
+           <i class="arrow-down"></i>
+      </view>
+    </view>
+  </view>
+
+  <view class="di"  >
+    <view class="identity_box mt20">
+        <view class="box_left">
+              <view class="up">
+                  <view class="fs40">88</view>
+                  <view class="fs28 text-muted">团长</view>
+              </view>
+              <view class="l_down">
+                  <view>
+                      <view class="fs40">46</view>
+                      <view class="fs28 text-muted">直接</view>
+                  </view>
+                  <view>
+                      <view class="fs40">42</view>
+                      <view class="fs28 text-muted">间接</view>
+                  </view>
+              </view>
+              <view class="dot_l">团长</view>
+        </view>
+        <view class="box_right">
+            <view class="up">
+                  <view class="fs40">88</view>
+                  <view class="fs28 text-muted">会员</view>
+              </view>
+              <view class="r_down">
+                  <view>
+                      <view class="fs40">46</view>
+                      <view class="fs28 text-muted">直接</view>
+                  </view>
+                  <view>
+                      <view class="fs40">42</view>
+                      <view class="fs28 text-muted">间接</view>
+                  </view>
+              </view>
+              <view class="dot_r">会员</view>
+        </view>
+    </view>
+    <view class="weui-cells border-after lie " wx:if='{{!emptyData}}'>
+      <view class="weui-cell  bg-fff ">
+        <view class="weui-cell__hd">
+          <image src="{{imgUrl}}proimg.jpg" class="tx-img"></image>
+        </view>
+        <view class="weui-cell__bd info">
+          <view class="weui-cell__title row fs24">
+            <text class="fs28 fw800">胖子的自我修养</text>
+            <text class=" fs28 mt10">ID 41561556</text>
+          </view>
+          <view class='row text-muted'>
+            <text>上级:小树叶麻麻</text>
+            <text>级别:直接下级</text>
+          </view>
+          <view class='row text-muted'>
+            <text>地区:广东</text>
+            <text>时间:2019.10.10</text>
+          </view>
+        </view>
+      </view>
+      <view class="weui-cell  bg-fff ">
+        <view class="weui-cell__hd">
+          <image src="{{imgUrl}}proimg.jpg" class="tx-img"></image>
+        </view>
+        <view class="weui-cell__bd info">
+          <view class="weui-cell__title row fs24">
+            <text class="fs28 fw800">胖子的自我修养</text>
+            <text class=" fs28 mt10">ID 41561556</text>
+          </view>
+          <view class='row text-muted'>
+            <text>上级:小树叶麻麻</text>
+            <text>级别:直接下级</text>
+          </view>
+          <view class='row text-muted'>
+            <text>地区:广东</text>
+            <text>时间:2019.10.10</text>
+          </view>
+        </view>
+      </view>
+      <view class="weui-cell  bg-fff ">
+        <view class="weui-cell__hd">
+          <image src="{{imgUrl}}proimg.jpg" class="tx-img"></image>
+        </view>
+        <view class="weui-cell__bd info">
+          <view class="weui-cell__title row fs24">
+            <text class="fs28 fw800">胖子的自我修养</text>
+            <text class=" fs28 mt10">ID 41561556</text>
+          </view>
+          <view class='row text-muted'>
+            <text>上级:小树叶麻麻</text>
+            <text>级别:直接下级</text>
+          </view>
+          <view class='row text-muted'>
+            <text>地区:广东</text>
+            <text>时间:2019.10.10</text>
+          </view>
+        </view>
+      </view>
+      <view class="weui-cell  bg-fff ">
+        <view class="weui-cell__hd">
+          <image src="{{imgUrl}}proimg.jpg" class="tx-img"></image>
+        </view>
+        <view class="weui-cell__bd info">
+          <view class="weui-cell__title row fs24">
+            <text class="fs28 fw800">胖子的自我修养</text>
+            <text class=" fs28 mt10">ID 41561556</text>
+          </view>
+          <view class='row text-muted'>
+            <text>上级:小树叶麻麻</text>
+            <text>级别:直接下级</text>
+          </view>
+          <view class='row text-muted'>
+            <text>地区:广东</text>
+            <text>时间:2019.10.10</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+   <view class='emptyDataBox mt20' wx:if='{{emptyData}}'>
+    <image src='/images/emptyData.png'></image>
+    <text>~暂无相关数据</text>
+  </view>
+
+  <view class='mask' wx:if="{{panelShow}}" bindtap='closePanle'></view>
+<view class='weui-panel select_panel {{panelShow?"panel_show":""}}'>
+  <view class='weui-panel__hd border-none'>
+    <text class='text-default fs36 fw600'>请选择类型</text>
+    <view class='close_x' bindtap='closePanle'>×</view>
+  </view>
+  <view class='weui-panel__bd'>
+    <view class='weui-cells'>
+      <view wx:for="{{list}}" wx:key="" class='weui-cell border-none'>
+        <view class='weui-cell__bd fs30'  bindtap='addCla'>{{item.bank}}</view>
+        <view class='weui-cell__ft' wx:if="{{!isSelect}}"><text class='icon_ok' ></text></view>
+      </view>
+    </view>
+  </view>
+</view>
+</view>

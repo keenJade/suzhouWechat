@@ -1,0 +1,99 @@
+page {
+  background-color: #f7f7f7;
+}
+
+.outbox{
+  width: 100vw;
+  background: #ffff;
+}
+.bottom_box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	background-color: #ffffff;
+  display: flex;
+  z-index: 99;
+}
+
+.bottom_box view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+
+.bottom_box image {
+  width:45rpx;
+  height: 45rpx;
+  margin-top:18rpx;
+  margin-bottom: 6rpx;
+  position: relative;
+  top: -2rpx;
+}
+
+.bigqrcode {
+  width: 600rpx;
+  height:85%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 15rpx 0px rgba(0, 0, 0, 0.05);
+}
+.bigqrcode image{
+  width:100%; 
+}
+.bigqrcode .active{
+  display: block;
+}
+.fs30{
+  font-size: 30rpx;
+}
+.fs50{
+  font-size: 50rpx;
+}
+.up_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:60%;
+}
+.one{
+  padding: 12rpx;
+  background-color: #fff;
+  position: relative;
+}
+.one .goodsImg{
+  width: 576rpx;
+  height: 576rpx;
+}
+.one .userInfo{
+  display: flex;
+  align-items: center;
+  padding-left: 18rpx;
+  height: 180rpx;
+}
+.one .userInfo image{
+  width: 92rpx;
+  height: 92rpx;
+  margin-right: 20rpx;
+}
+.one .codeImg{
+  position: absolute;
+  right: 36rpx;
+  top:500rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.one .codeImg image{
+  width: 170rpx;
+  height: 170rpx;
+  background-color: #fff;
+  padding: 4rpx;
+}

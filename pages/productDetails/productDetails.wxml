@@ -1,0 +1,190 @@
+<scroll-view scroll-y class='page-scroll'>
+  <view class='pagetop'>
+    <view class='swiper-box'>
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="dtsw">
+          <swiper-item>
+            <image wx:if="{{item}}" src="{{imgBase}}{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class='jrms_box'>
+        <view class='jrms_hd'>
+         <view class="fs28">限时优惠中</view> 
+          <view class='left fs28'>
+            <text>距结束</text>
+            <view class='countdown'>
+              <text>{{showTime[0]}}</text> :
+              <text>{{showTime[1]}}</text> :
+              <text>{{showTime[2]}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='weui-cells mt0'>
+      <view class='weui-cell '>
+        <view class='weui-cell__bd'>
+          <view class="fenxiang">
+            <view>
+              <text class='fs30 fw_b'>￥</text>
+              <text class='fs52 ff'>369</text>
+              <text class='fs30 ff'>.39</text>
+              <text class='badge offset'>限时团购</text>
+            </view>
+            <navigator>
+              <image src="/images/goodsIcon01.png"></image>
+            </navigator>
+          </view>
+          <view class="fenxiang">
+            <text class='sprice'>￥2635.00</text>
+            <view>
+              <text class='fs24 text-pink '>仅剩965 </text>
+              <text class='fs24 ff'>| </text>
+              <text class='text-muted fs24 '>已售26953</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='weui-cell border-none pt0'>
+        <view class='weui-cell__bd'>
+          <view class='title fs34 fw600 ellipsisLn2'>冬季新款羽绒服宽松面包服休闲百搭短款羽绒服女女红色喜庆</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='weui-cells gird4 mt5'>
+    <view class='weui-cell'>
+      <view class='weui-cell__bd fs32 fw600'>
+        <image class="true_dot" src="/images/true_dot.png"></image>
+        <text class="fs22">全球直邮</text>
+      </view>
+      <view class='weui-cell__bd fs32 fw600'>
+        <image class="true_dot" src="/images/true_dot.png"></image>
+        <text class="fs22">一件批发</text>
+      </view>
+      <view class='weui-cell__bd fs32 fw600'>
+        <image class="true_dot" src="/images/true_dot.png"></image>
+        <text class="fs22">限时团购</text>
+      </view>
+      <view class='weui-cell__bd fs32 fw600'>
+        <image class="true_dot" src="/images/true_dot.png"></image>
+        <text class="fs22">售后无忧</text>
+      </view>
+
+    </view>
+  </view>
+  <view class='weui-cells'>
+    <view class='weui-cell weui-cell__ft_in-access' bindtap='openGG'>
+      <view class='weui-cell__bd fs32 fw600'>选择规格</view>
+      <view class='weui-cell__ft'>蓝色 / M码 / 5件</view>
+    </view>
+  </view>
+
+  <view class='weui-cells mt5'>
+    <view class='weui-cell weui-cell__ft_in-access' bindtap='openGA'>
+      <view class='weui-cell__bd fs32 fw600'>商品参数</view>
+      <view class='weui-cell__ft'></view>
+    </view>
+  </view>
+
+  <view class='weui-cells mb20'>
+    <view class='weui-cell'>
+      <view class='weui-cell__bd'>
+        <view class='fs32 fw600'>商品详情</view>
+        <view class='details_content'>
+          <!--图片内容-->
+          <image src='{{imgBase}}imgtext.png' mode='widthFix'></image>
+          <image src='{{imgBase}}imgtext.png' mode='widthFix'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+<view class='bottom_btns'>
+  <view class='left'>
+    <view bindtap='goindex'>
+      <view class='icon'>
+        <image src='/images/tabbar_icon01.png'></image>
+      </view>
+      <view class='text'>首页</view>
+    </view>
+    <view>
+      <view class='icon'>
+        <image src='/images/goodsIcon02.png'></image>
+      </view>
+      <view class='text'>客服</view>
+    </view>
+    <view bindtap='shopCart'>
+      <view class='icon'>
+        <text class='num'>8</text>
+        <image src='/images/tabbar_icon04.png'></image>
+      </view>
+      <view class='text'>购物车</view>
+    </view>
+  </view>
+  <view class='right'>
+    <view class='btns'>
+      <view class='btn1' bindtap='addCart'>加入购物车</view>
+      <view class='btn2' bindtap='pay'>立即购买</view>
+    </view>
+  </view>
+</view>
+
+<!-- 弹出规格选择 -->
+
+<view class="model  {{guigeModel?'model_show':''}}" wx:if='{{guigeModel}}'>
+  <view class='modelBg' bindtap='closeGG'></view>
+  <view class="modelContent">
+    <view class="closeBox" bindtap='closeGG'>
+      <image src='/images/close_icon.png'></image>
+    </view>
+    <view class="top">
+      <view class="left">
+        <image src='{{imgBase}}goods01.png'></image>
+      </view>
+      <view class="right">
+        <view class="money">
+          <view class="text-red fs30 num">
+            <p class="fw_b fm_p">￥</p>
+            <em class="fs52 ff">199</em>
+            <p class="fw_b ff">.00</p>
+          </view>
+          <text class="fs22 color_w BGcolor_r">活动价</text>
+        </view>
+        <view class="fs24 color_9 moneyPrimary">￥2635.00</view>
+        <p class="fs28 fw_b color_3 goodstype">{{goodsitem}}-{{sizeitem}}</p>
+      </view>
+    </view>
+    <view class="cantre">
+      <view class="block">
+        <text class="fs32 fw_b color_3">颜色</text>
+        <view class="list color">
+          <text class="fs28 color_3 {{item == goodsitem?'tag_active':''}} bor-1px" data-money="198.99" wx:for="{{goodsColor}}" wx:key='*index' bindtap='changColor' data-classify="{{item}}">{{item}}</text>
+        </view>
+      </view>
+      <view class="block">
+        <text class="fs32 fw_b color_3">尺码</text>
+        <view class="list size">
+          <text class="fs28 color_3 {{item == sizeitem?'tag_active':''}} bor-1px" wx:for="{{goodsSize}}" wx:key='*index' bindtap='changSize' data-classify="{{item}}">{{item}}</text>
+        </view>
+      </view>
+      <view class="block">
+        <view class="numberBox">
+          <text class="fs32 fw_b color_3">数量</text>
+          <view class="number">
+            <text class="number-sub fs30" bindtap='minus'>-</text>
+            <input class="number-input fs28" type="text" value="{{goodsnumber}}" />
+            <text class="number-plus fs30" bindtap='add'>+</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="buttBox">
+      <text class="fs28 fw_b color_w BGcolor_3" bindtap='addCart'>加入购物车</text>
+      <text class="fs28 fw_b color_w BGcolor_r" bindtap='pay'>立即购买</text>
+    </view>
+  </view>
+</view>

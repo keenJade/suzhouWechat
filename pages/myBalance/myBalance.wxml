@@ -1,0 +1,66 @@
+<view class="page">
+   <view class="weui-cells mt0   border-before border-after">
+    <view class="weui-cell lbbg tl" style=" flex-flow: column;">
+      <view class="weui-cell__bd w100">
+        <view class="weui-cell border-before p0" style="justify-content: space-between;align-items: flex-start;">
+          <view class="weui-cell__bd">
+            <view class="fs48 text-white fw500 ff">36962.00</view>
+            <view class="text-white fs26 o_5">佣金(元)</view>
+          </view>
+          <view class="weui-cell__ft">
+            <navigator url='/pages/withdrawCash/withdrawCash' class="tx-btn text-white">
+              提现
+            </navigator>
+          </view>
+        </view>
+      </view>
+      <view class="weui-cell__ft w100">
+        <view class="text-white fs26 tl o_5">累计佣金
+          <text class="fs26 text-white ff fw500">￥1587.00</text>, 可提佣金
+          <text class="fs26 text-white ff fw500">￥3652.00</text>
+        </view>
+      </view>
+    </view>
+        <navigator  class="weui-cell weui-cell__ft_in-access border-before">
+          <view class="weui-cell__hd">
+            <image src="/images/my_blance02.png" class="img2" style="vertical-align:sub;"></image>
+          </view>
+          <view class="weui-cell__bd ml10">
+            <text class="fs30 ">佣金明细</text>
+          </view>
+          <view class="weui-cell__ft"></view>
+        </navigator>
+    
+  </view>
+
+  <view class="weui-cells    border-before border-after">
+    <view class="weui-cell lbbg tl" style=" flex-flow: column;">
+      <view class="weui-cell__bd w100">
+        <view class="weui-cell border-before p0" style="justify-content: space-between;align-items: flex-start;">
+          <view class="weui-cell__bd">
+            <view class="fs48 text-white fw500 ff">36962.00</view>
+            <view class="text-white fs26 o_5">余额(元)</view>
+          </view>
+          <view class="weui-cell__ft">
+            <navigator url='/pages/withdrawCash/withdrawCash' class="tx-btn">
+              充值
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+    <navigator url="/pages/balanceDetail/balanceDetail" class="weui-cell weui-cell__ft_in-access">
+      <view class="weui-cell__hd">
+        <image src="/images/my_blance01.png" class="img2" style="vertical-align:sub;"></image>
+      </view>
+      <view class="weui-cell__bd ml10">
+        <text class="fs30">余额明细</text>
+      </view>
+      <view class="weui-cell__ft"></view>
+    </navigator>
+  </view>
+ 
+  
+   
+  
+</view>
